@@ -1,0 +1,185 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no horizontal scroll */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent any overflow */
+}
+
+/* Styling for the container, navigation bar, and footer */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #3498db; 
+    padding: 15px 0; 
+    width: 100%; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    max-width: 100%; /* Ensure the navbar stays within the page's width */
+    padding-left: 50px; /* Adjust the padding to match the content width */
+    padding-right: 50px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: flex-end;
+    margin-left: auto; /* This pushes the links to the right side */
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    color: #11487f;
+}
+
+/* Discussion section styling */
+.discussion-section {
+    margin-top: 20px;
+}
+
+.discussion-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.thread {
+    margin-top: 20px;
+}
+
+.thread .message {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.reply-section {
+    margin-top: 10px;
+}
+
+.reply-section textarea {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.reply-section button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reply-section button:hover {
+    background-color: #0056b3;
+}
+
+.moderation-tools {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.question-form {
+    margin-top: 20px;
+}
+
+.question-form input,
+.question-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.question-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.question-form button:hover {
+    color: #11487f;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #3498db; 
+    color: white; 
+    text-align: center;
+    padding: 15px; 
+    margin-top: 30px; 
+    position: relative; 
+    width: 100%; 
+}
+
+footer a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+}
+
+footer a:hover {
+    color: #11487f;
+}

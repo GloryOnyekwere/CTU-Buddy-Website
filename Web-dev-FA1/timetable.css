@@ -1,0 +1,130 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0; /* To avoid scrollbar issues */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #3498db; 
+    padding: 15px 0; 
+    width: 100%; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: flex-end;
+    margin-left: auto; /* This pushes the links to the right side */
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    color: #11487f;
+}
+
+
+/* Styling the container */
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto; /* Ensure centering and spacing */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #11487f;
+}
+
+/* Styling the tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+tr:hover td {
+    background-color: #e0e0e0;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #3498db; 
+    color: white; 
+    text-align: center;
+    padding: 15px; 
+    margin-top: auto; /* Ensures footer stays at the bottom */
+    width: 100%; 
+}
+
+footer a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+}
+
+footer a:hover {
+    color: #11487f;
+}

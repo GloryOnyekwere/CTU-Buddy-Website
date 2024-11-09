@@ -1,0 +1,211 @@
+/* Reset margin and padding globally */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #3498db; 
+    padding: 15px 0; 
+    width: 100%; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Added to space out logo and nav items */
+    padding-left: 50px; 
+    padding-right: 50px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    color: #11487f;
+}
+
+
+/* Ensure html and body take up full height */
+html, body {
+    height: 100%; 
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(43, 42, 47);
+    color: #333;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    padding: 0; /* Remove any padding to ensure the navbar is at the top */
+}
+
+/* Contact container styling */
+.contact-container {
+    max-width: 1200px;
+    width: 100%;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the container */
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+/* Contact form styling */
+.contact-form, .contact-info, .subscription-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form {
+    margin-top: 20px;
+}
+
+.subscription-form p {
+    margin-bottom: 15px;
+    color: black; 
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.btn-submit {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0f5d91;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.contact-info h2,
+.subscription-form h2 {
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: whitesmoke;
+}
+
+/* Ensuring footer is at the bottom of the screen */
+body > footer {
+    margin-top: auto; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+    
+    .contact-form, .contact-info, .subscription-form {
+        width: 100%; /* Ensure forms take full width */
+    }
+}

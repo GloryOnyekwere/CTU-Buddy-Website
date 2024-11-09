@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Discussions</title>
+    <link rel="stylesheet" href="discussion.css">
+</head>
+
+<body>
+
+    <!-- Creating the navigation bar -->
+    <nav>
+        <div class="logo">CTU-BUDDY</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="share_resources.html">Share Resources</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Creating the main content container -->
+    <div class="container">
+        
+        <div class="discussion-section">
+            <div class="discussion-header">Student Discussions</div>
+
+            <!-- Ask a Question -->
+            <div class="question-form">
+                <h4>Ask a Question</h4>
+                <input type="text" id="user-name" placeholder="Your Name">
+                <textarea id="user-question" placeholder="Your Question"></textarea>
+                <button type="button" onclick="submitQuestion()">Submit</button>
+            </div>
+
+            <!-- Adding threaded messages -->
+            <h2>Threaded Discussions</h2>
+
+            <div id="thread-container" class="thread">
+                <!-- Adding initial threads with user profiles and questions -->
+                <div class="message">
+                    <div class="user-profile">
+                        <span class="user-name">Karen Napoly</span>
+                    </div>
+                    <div class="message-content">How do you approach difficult subjects or topics that you find challenging?</div>
+                    <!-- Moderation tools -->
+                    <div class="moderation-tools">
+                        <button onclick="editMessage(this)">Edit</button>
+                        <button onclick="deleteMessage(this)">Delete</button>
+                        <button onclick="reportMessage(this)">Report</button>
+                    </div>
+                    <div class="reply-section">
+                        <textarea placeholder="Reply here..."></textarea>
+                        <button type="button" onclick="replyToMessage(this)">Reply</button>
+                    </div>
+                    <div class="thread">
+                        <div class="message">
+                            <div class="user-profile">
+                                <span class="user-name">Katherine Robinson</span>
+                            </div>
+                            <div class="message-content">Do we have to come to school tomorrow?</div>
+                            <!-- Adding the moderation tools -->
+                            <div class="moderation-tools">
+                                <button onclick="editMessage(this)">Edit</button>
+                                <button onclick="deleteMessage(this)">Delete</button>
+                                <button onclick="reportMessage(this)">Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add a Footer -->
+    <footer>
+    <p>&copy; 2024 CTU-Buddy. All Rights Reserved.</p>
+    <p>
+        <a href="https://m.facebook.com/CTUTrainingSolutions/">Facebook</a>
+        <a href="https://x.com/wallflower_xoxo/status/1731708813395341706?s=46">Twitter</a>
+        <a href="https://www.linkedin.com/in/glory-ony/">LinkedIn</a>
+        <a href="https://www.instagram.com/ctutrainingsolutions?igsh=MWRqOTRldjBnbHNiMA==">Instagram</a>
+    </p>
+</footer>
+
+    <!-- Linking html to external JavaScript -->
+    <script src="discussion.js"></script>
+
+</body>
+
+</html>
